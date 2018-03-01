@@ -49,7 +49,7 @@ object Recursion extends App{
     if (n == 0) current
     else fibIter(current, prev + current, n - 1)
 
-  println(fib(11))
+  println(fib(10000))
 
 
   def foldLeft[A, B](seq: Seq[A], z: B)(f: (B, A) => B): B =
