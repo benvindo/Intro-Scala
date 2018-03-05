@@ -6,13 +6,6 @@ object Summing extends App{
     if (a > b) 0
     else f(a) + sum(f, a + 1, b)
 
-  /*
-  * sum(x => x*x,2,3)
-  * 2,3 -> 2*2 + 4
-  * 3,3 -> 3*3 + 9
-  *
-  * */
-
   def sumInts(a: Int, b: Int) = sum (id, a, b)
   def sumCubes(a: Int, b: Int) = sum (cube, a, b)
   def sumFactorials(a: Int, b: Int) = sum (fact, a, b)
@@ -33,6 +26,6 @@ object Summing extends App{
     loop(a, 0)
   }
 
-  println(sum(x => x*x,2,3))
+  println(sum(x => x*x,4,5))
   //println(sum2(x => x*x,2,3))
 }

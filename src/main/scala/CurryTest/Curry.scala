@@ -2,19 +2,14 @@ package CurryTest
 
 object Curry extends App{
 
-  def curryBinaryOperator[A](operator: (A, A) => A): A => (A => A) = {
+  def product(f: Int => Int)(a:Int, b:Int): Int =
+    if(a > b) 1
+    else f(a) * product(f)(a+1, b)
 
-    def curry(a: A): A => A = {
-      (b: A) => operator(a,b)
-    }
+  println(product(x => x *x)(3,4))
 
-    curry
-  }
+  def fact(n: Int) = product(x => x)(1, n)
 
-  def add(a: Int, b: Int) = a + b // (Int, Int) => Int
-  def multiply(a: Int, b: Int) = a * b // (Int, Int) => Int
-
-  val addCurried = curryBinaryOperator(add) // Int => (Int => Int)
-  val multiplyCurried = curryBinaryOperator(multiply) // Int => (Int => Int)
+  println(fact(12))
 
 }
