@@ -1,6 +1,6 @@
 package Scala_A_Z
 
-// objeto singleton, "ao mesmo tempo uma classe" quando for usar o obejeto so utilizarar o nome Util, não precisará instanciar esse cara
+// objeto singleton, "ao mesmo tempo uma classe" quando for usar o objeto so utilizarar o nome Util, não precisará instanciar esse cara
 // os objetos singleton  do scala  já considera a programação concorrente
 // objeto normal
 object Util {
