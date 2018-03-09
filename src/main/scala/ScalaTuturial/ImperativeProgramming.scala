@@ -1,6 +1,6 @@
 package ScalaTuturial
 
-class BankAccount {
+class BankAccount1 {
   private var balance = 0
   def deposit(amount: Int): Int = {
     if (amount > 0) balance = balance + amount
@@ -14,16 +14,16 @@ class BankAccount {
 }
 
 
-object BankAccount extends App{
+object BankAccount1 extends App {
 
-  val account = new BankAccount // account: BankAccount = BankAccount
+  val account = new BankAccount1 // account: BankAccount = BankAccount
   //account deposit 50 //
   //account withdraw 20 // res1: Int = 30
   //account.withdraw(20) // res2: Int = 10
   //account withdraw 15                 // java.lang.Error: insufficient funds
 
-  val x = new BankAccount
-  val y = new BankAccount
+  val x = new BankAccount1
+  val y = new BankAccount1
 
   println(x deposit 30)
   //println(y withdraw 20)                // java.lang.Error: insufficient funds
