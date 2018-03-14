@@ -1,6 +1,6 @@
 package Funcao_Ordem_Superior
 
-object FixedPoint {
+object FixedPoint extends App{
 
   val tolerance = 0.0001
 
@@ -16,6 +16,20 @@ object FixedPoint {
     iterate(firstGuess)
   }
 
+  //private val x = 100;
+ // println(FixedPoint(5) == FixedPoint(5))
+  //val f = FixedPoint()
+  //val tt = new FixedPoint(5)
+ // val time = FixedPoint(5)
+  //tt.y
+  //println(f.x)
+
+  var time  = FixedPoint(9,45)
+
+}
+
+case class FixedPoint(x: Int,y: Int) {
 
 
+  //println(FixedPoint.x)
 }

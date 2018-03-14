@@ -1,3 +1,5 @@
+
+
 object saz3{
   def ehPar(x: Int): Boolean = {
     x % 2 == 0
@@ -18,4 +20,9 @@ object saz3{
   nomeCompleto
 
 }
+
+//var x = List(1,2,3)
+var y = scala.collection.mutable.ArrayBuffer.empty[Int]
+//x.add(4)
+
 
